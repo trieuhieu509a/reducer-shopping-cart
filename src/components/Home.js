@@ -35,11 +35,8 @@ const Home = () => {
       }
 
       if(searchQuery) {
-        console.log(searchQuery);
-        console.log(sortedProducts);
         sortedProducts = sortedProducts.filter(product => product.name.toLowerCase().includes(searchQuery))
       }
-      console.log(sortedProducts);
       return sortedProducts;
     }
 
